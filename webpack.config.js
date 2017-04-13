@@ -24,7 +24,7 @@ module.exports = {
         'image-webpack-loader?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 65}}'
       ]
     }
-  ];
+  ],
   resolve: {
     extensions: ['', '.js', '.jsx']
   },

@@ -21,7 +21,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
-    loaders: [
+  loaders: [
     {
       test: /\.(gif|png|jpe?g|svg)$/i,
       loaders: [
@@ -29,7 +29,7 @@ module.exports = {
         'image-webpack-loader?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 65}}'
       ]
     }
-  ];
+  ],
   plugins: [
     new webpack.DefinePlugin({ //<--key to reduce React's size
       'process.env': {

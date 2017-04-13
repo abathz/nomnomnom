@@ -13,10 +13,16 @@
   src:url(./assets/fonts/Gotham-Light.otf);
 }
 
+@font-face{
+  font-family: "Gotham-Book";
+  src:url(./assets/fonts/Gotham-Book.otf);
+}
+
 body{
   font-family: "Gotham-Medium" !important;
-  background: url(./assets/img/background-01.png);
-  background-size: cover;
+  background-color: #695c4b !important;
+  /*background: url(./assets/img/background-02.png) no-repeat;
+  background-size: 100%;*/
 }
 
 /* Navigation Bar */
@@ -54,6 +60,29 @@ body{
   padding: 0 !important;
 }
 
+.food-menu:hover .overlay{
+  visibility: visible;
+  background: rgba(37, 185, 154, .5) !important;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  background: rgba(37, 185, 154, 0) !important;
+  width: 100%;
+  visibility: hidden;
+}
+
+.desc-content{
+  position: absolute;
+
+}
+
 /* About Us */
 .content-about{
   color: #fff;
@@ -63,7 +92,7 @@ body{
 }
 
 .content-about p{
-  font-family: "Gotham-Light";
+  font-family: "Gotham-Book";
 }
 
 
@@ -97,4 +126,108 @@ body{
 .social-media img{
    width: 35px;
    margin-right: 10px;
+}
+
+/* Common style */
+.grid figure {
+	overflow: hidden;
+  max-height: 480px;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*---------------*/
+/***** Lily *****/
+/*---------------*/
+
+figure.effect-lily img {
+	max-width: none;
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 50px);
+	opacity: 0.2;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,0, 0);
+	transform: translate3d(-40px,0,0);
+}
+
+figure.effect-lily figcaption {
+	text-align: left;
+}
+
+figure.effect-lily figcaption > div {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	height: 50%;
+}
+
+figure.effect-lily h2,
+figure.effect-lily p {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-lily h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-lily p {
+	color: #000;
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+	opacity: 1;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover h2,
+figure.effect-lily:hover p {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-lily:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
 }
