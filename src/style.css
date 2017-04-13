@@ -1,1 +1,100 @@
+/*
+  Custom CSS
+  Author : Adli Fariz Bonaputra
+*/
 
+@font-face{
+  font-family: "Gotham-Medium";
+  src:url(./assets/fonts/Gotham-Medium.otf);
+}
+
+@font-face{
+  font-family: "Gotham-Light";
+  src:url(./assets/fonts/Gotham-Light.otf);
+}
+
+body{
+  font-family: "Gotham-Medium" !important;
+  background: url(./assets/img/background-01.png);
+  background-size: cover;
+}
+
+/* Navigation Bar */
+.logo img{
+  width: 200px;
+}
+
+.navbar ul{
+  padding: 0;
+}
+
+.navbar a,
+.navbar a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar li{
+  display: inline-block;
+  color: #fff;
+  font-size: 12pt;
+  padding: 10px 20px;
+}
+
+.navbar li:hover{
+  background-color: #E6CA4D;
+  cursor: default;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Menu Container */
+.food-menu,
+.cake-menu{
+  padding: 0 !important;
+}
+
+/* About Us */
+.content-about{
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.content-about p{
+  font-family: "Gotham-Light";
+}
+
+
+/* Slider */
+.slide img{
+  width: 300px;
+}
+
+/* Sidebar */
+.bg-sidebar{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content-sidebar{
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer{
+   padding: 0;
+}
+
+.content{
+   background-color: #58595B;
+   width: 100%;
+   padding: 39px;
+   color: #eee;
+}
+
+.social-media img{
+   width: 35px;
+   margin-right: 10px;
+}
