@@ -4,23 +4,13 @@ export default class Footer extends Component {
   render() {
     return (
       <div className="row">
-        <div className="col-lg-12 content">
-          <div className="col-lg-6">
-            <div className="text-center">
-              <h4>Open Hours</h4>
-              <p style={{fontFamily: 'Gotham-Light'}}>
-                9am - 10pm<br/>
-                Monday - Sunday
-              </p>
-              <p>
-                Enquiries: (021) 75817841<br/>
-              </p>
-              <div className="social-media">
-                <img src="./assets/img/instagramicon.png" alt=""/>
-                <img src="./assets/img/twittericon.png" alt=""/>
-              </div>
-            </div>
-          </div>
+        <div className="col-12 social-media text-center">
+          <a href="https://www.instagram.com/nomnomnom_id/" target="_blank"><img src="./src/assets/img/instagramicon.png" width="45px" alt=""/></a>
+          <a href="https://twitter.com/nomnomnom_id/" target="_blank"><img src="./src/assets/img/twittericon.png" width="45px" alt=""/></a>
+          <a href="https://www.facebook.com/nomnomnom.id/" target="_blank"><img src="./src/assets/img/facebook-logo.png" width="42px" alt=""/></a>
+        </div>
+        <div className="col-12 footer-info text-center">
+          <p>© 2017 HMPSM. All Rights Reserved. Developed by <a href="https://www.linkedin.com/in/adlifariz/" target="_blank">Adli Fariz Bonaputra</a></p>
         </div>
       </div>
     );
