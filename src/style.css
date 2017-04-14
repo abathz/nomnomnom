@@ -25,7 +25,9 @@ body{
   background-size: 100%;*/
 }
 
+/*----------------*/
 /* Navigation Bar */
+/*----------------*/
 .logo img{
   width: 200px;
 }
@@ -54,36 +56,123 @@ body{
   color: #fff;
 }
 
+/*----------------*/
 /* Menu Container */
+/*----------------*/
 .food-menu,
 .cake-menu{
   padding: 0 !important;
 }
 
-.food-menu:hover .overlay{
-  visibility: visible;
-  background: rgba(37, 185, 154, .5) !important;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+.grid .effect-lily {
+	overflow: hidden;
+  max-height: 480px;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
 }
 
-.overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  color: #fff;
-  background: rgba(37, 185, 154, 0) !important;
-  width: 100%;
-  visibility: hidden;
+.grid .effect-lily:hover{
+  background: #68a6a6;
 }
 
-.desc-content{
-  position: absolute;
-
+.grid .effect-lily img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
 }
 
+.grid .effect-lily .caption {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid .effect-lily .caption::before,
+.grid .effect-lily .caption::after {
+	pointer-events: none;
+}
+
+.grid .effect-lily .caption,
+.grid .effect-lily .caption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.grid .effect-lily img {
+	max-width: none;
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 50px);
+	opacity: 0.5;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,0, 0);
+	transform: translate3d(-40px,0,0);
+}
+
+.grid .effect-lily .caption {
+	text-align: left;
+}
+
+.grid .effect-lily .caption > div{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	height: 50%;
+}
+
+.grid .effect-lily h2,
+.grid .effect-lily p {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+.grid .effect-lily h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+.grid .effect-lily p {
+	color: #fff;
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+.grid .effect-lily:hover img{
+	opacity: 1;
+}
+
+.grid .effect-lily:hover p{
+  opacity: 1;
+}
+
+.grid .effect-lily:hover img,
+.grid .effect-lily:hover h2,
+.grid .effect-lily:hover p {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.grid .effect-lily:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+}
+
+/*----------*/
 /* About Us */
+/*----------*/
 .content-about{
   color: #fff;
   background-color: rgba(0, 0, 0, 0.4);
@@ -95,23 +184,9 @@ body{
   font-family: "Gotham-Book";
 }
 
-
-/* Slider */
-.slide img{
-  width: 300px;
-}
-
-/* Sidebar */
-.bg-sidebar{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.content-sidebar{
-  margin-top: 10px;
-}
-
+/*--------*/
 /* Footer */
+/*--------*/
 .footer{
    padding: 0;
 }
@@ -138,7 +213,7 @@ body{
 }
 
 .grid .effect-lily:hover{
-  background: #54c3c2;
+  background: #68a6a6;
 }
 
 .grid .effect-lily img {
