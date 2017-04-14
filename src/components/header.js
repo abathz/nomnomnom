@@ -7,7 +7,7 @@ export default class Navbar extends Component {
       <div className="row animated fadeInUp">
         <div className="col-lg-12 text-center">
           <div className="logo mt-3">
-            <img src="./src/assets/img/nomnomnom_logo.png" alt=""/>
+            <img src="./src/assets/img/nomnomnom_logo-01.png" alt=""/>
           </div>
         </div>
         <div className="mx-auto mt-2">
