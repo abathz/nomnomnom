@@ -21,7 +21,7 @@
 body{
   font-family: "Gotham-Medium" !important;
   background-color: #695c4b !important;
-  /*background: url(./assets/img/background-02.png) no-repeat;
+  /*background: url(./assets/img/background.png) no-repeat;
   background-size: 100%;*/
 }
 
@@ -63,14 +63,14 @@ body{
 
 .grid .effect-lily {
 	overflow: hidden;
-  max-height: 400px;
+  max-height: 430px;
 	width: 100%;
 	text-align: center;
 	cursor: pointer;
 }
 
 .grid .effect-lily:hover{
-  background: #658485;
+  background: #857c5b;
 }
 
 .grid .effect-lily img {
@@ -107,7 +107,7 @@ body{
 	max-width: none;
 	width: -webkit-calc(100% + 50px);
 	width: calc(100% + 50px);
-	opacity: 0.6;
+	opacity: 1;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(-40px,0, 0);
@@ -189,7 +189,8 @@ body{
 }
 
 .social-media{
-  margin: 47px 0px;
+  margin-top: 30px;
+  margin-bottom: 35px;
 }
 
 .social-media img{
