@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Header from 'Components/header';
+import Header from 'components/header';
 
 export default class FoodMenu extends Component {
   render() {
