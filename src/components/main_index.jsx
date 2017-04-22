@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import Header from './header';
-import MenuContainer from './menu_container';
-import Footer from './footer';
+import Header from 'Components/header';
+import MenuContainer from 'Components/menu_container';
+import Footer from 'Components/footer';
 
 export default class MainPages extends Component {
   render() {

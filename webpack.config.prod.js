@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
   entry: [
@@ -19,7 +20,12 @@ module.exports = {
     }]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx'],
+    alias: {
+      Components: path.resolve(__dirname, 'src/components/'),
+      Actions: path.resolve(__dirname, 'src/actions/'),
+      Reducers: path.resolve(__dirname, 'src/reducers')
+    }
   },
   loaders: [
     {
@@ -31,13 +37,23 @@ module.exports = {
     }
   ],
   plugins: [
-    new webpack.DefinePlugin({ //<--key to reduce React's size
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
+    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+    new webpack.DefinePlugin({
       'process.env': {
-      'NODE_ENV': JSON.stringify('production')
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true,
+      compressor: {
+        warnings: false
       }
     }),
     new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.UglifyJsPlugin(),
-    new webpack.optimize.AggressiveMergingPlugin(),
-  ]
+    new webpack.optimize.MinChunkSizePlugin({minChunkSize: 10000}),
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"public/vendor.bundle.js")
+  ],
 };
