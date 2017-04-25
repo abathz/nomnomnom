@@ -204,12 +204,21 @@ h6{
   font-family: "Medium";
 }
 
-.quote{
+.quote em{
 	background: rgba(0, 0, 0, 0.2);
 	border-radius: 30px;
 	padding: 10px;
 	font-size: 1.5em;
 	color: #f7ef6e;
+}
+
+.featured-content{
+	margin-top: 20px;
+	color: #fff;
+}
+
+.list-inline-item{
+	padding: 10px;
 }
 
 /*--------*/
