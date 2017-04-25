@@ -18,15 +18,6 @@ module.exports = {
       }
     }]
   },
-  loaders: [
-    {
-      test: /\.(gif|png|jpe?g|svg)$/i,
-      loaders: [
-        'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
-        'image-webpack-loader?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 65}}'
-      ]
-    }
-  ],
   resolve: {
     extensions: ['', '.js', '.jsx'],
     alias: {

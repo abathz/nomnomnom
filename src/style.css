@@ -4,25 +4,34 @@
 */
 
 @font-face{
-  font-family: "Gotham-Medium";
-  src:url(./assets/fonts/Gotham-Medium.otf);
+  font-family: "Medium";
+  src:url(./assets/fonts/ProximaNovaSoft-Regular.ttf);
 }
 
 @font-face{
-  font-family: "Gotham-Light";
-  src:url(./assets/fonts/Gotham-Light.otf);
+  font-family: "Bold";
+  src:url(./assets/fonts/ProximaNovaSoft-Bold.ttf);
 }
 
-@font-face{
+/*@font-face{
   font-family: "Gotham-Book";
   src:url(./assets/fonts/Gotham-Book.otf);
-}
+}*/
 
 body{
-  font-family: "Gotham-Medium" !important;
+  font-family: "Medium" !important;
   background-color: #695c4b !important;
   /*background: url(./assets/img/background.png) no-repeat;
   background-size: 100%;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: "Bold" !important;
 }
 
 /*----------------*/
@@ -43,13 +52,11 @@ body{
   display: inline-block;
   color: #fff;
   font-size: 12pt;
-  padding: 5px 10px;
 }
 
-.navbar li:hover{
-  background-color: #d0b03e;
-  cursor: default;
-  border-radius: 5px;
+.navbar li a:hover{
+	padding-bottom: 5px;
+  border-bottom: 4px solid #d0b03e;
   color: #fff;
 }
 
@@ -70,14 +77,12 @@ body{
 }
 
 .grid .effect-lily:hover{
-  background: #857c5b;
+  background: rgba(208, 176, 62, 0.4);
 }
 
-.grid .effect-lily img {
+.grid .effect-lily .img-fluid {
 	position: relative;
 	display: block;
-	min-height: 100%;
-	max-width: 100%;
 	opacity: 0.8;
 }
 
@@ -103,7 +108,7 @@ body{
 	height: 100%;
 }
 
-.grid .effect-lily img {
+.grid .effect-lily .img-fluid {
 	max-width: none;
 	width: -webkit-calc(100% + 50px);
 	width: calc(100% + 50px);
@@ -124,29 +129,39 @@ body{
 	left: 0;
 	padding: 2em;
 	width: 100%;
-	height: 50%;
 }
 
-.grid .effect-lily h2,
-.grid .effect-lily p {
+/*.grid .effect-lily .caption:hover > div{
+	background: rgba(171, 152, 87, 0.4)
+}*/
+
+.grid .effect-lily h1,
+.grid .effect-lily p,
+.grid .effect-lily .icon-caption  {
 	-webkit-transform: translate3d(0,40px,0);
 	transform: translate3d(0,40px,0);
 }
 
-.grid .effect-lily h2 {
+.grid .effect-lily h1 {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
 
-.grid .effect-lily p {
-	color: #fff;
+.grid .effect-lily p{
 	opacity: 0;
 	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
 	transition: opacity 0.2s, transform 0.35s;
 }
 
-.grid .effect-lily:hover img{
-	opacity: 0.3;
+.grid .effect-lily .icon-caption {
+	opacity: 1;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+.grid .effect-lily:hover .img-fluid{
+	z-index: -1;
+	opacity: 1;
 }
 
 .grid .effect-lily:hover p{
@@ -154,7 +169,7 @@ body{
 }
 
 .grid .effect-lily:hover img,
-.grid .effect-lily:hover h2,
+.grid .effect-lily:hover h1,
 .grid .effect-lily:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
@@ -167,6 +182,10 @@ body{
 	transition-duration: 0.35s;
 }
 
+.icon-caption{
+	margin-bottom: 10px;
+}
+
 /*----------*/
 /* About Us */
 /*----------*/
@@ -177,8 +196,20 @@ body{
   border-radius: 5px;
 }
 
+.content-about span{
+	border-bottom: 2px solid #f7ef6e;
+}
+
 .content-about p{
-  font-family: "Gotham-Book";
+  font-family: "Medium";
+}
+
+.quote{
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 30px;
+	padding: 10px;
+	font-size: 1.5em;
+	color: #f7ef6e;
 }
 
 /*--------*/
@@ -190,7 +221,7 @@ body{
 
 .social-media{
   margin-top: 30px;
-  margin-bottom: 35px;
+	margin-bottom: 15px;
 }
 
 .social-media img{
@@ -198,7 +229,7 @@ body{
 }
 
 .footer-info p{
-  font-family: "Gotham-Light";
+  font-family: "Medium";
   font-size: 9pt;
   color: #fff;
 }
