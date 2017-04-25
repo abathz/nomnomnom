@@ -8,7 +8,7 @@ export default class FoodMenu extends Component {
       <div className="">
         <Header />
         <div className="row">
-          
+
         </div>
       </div>
     );

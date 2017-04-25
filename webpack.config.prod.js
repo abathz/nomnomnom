@@ -22,9 +22,9 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx'],
     alias: {
-      Components: path.resolve(__dirname, 'src/components/'),
-      Actions: path.resolve(__dirname, 'src/actions/'),
-      Reducers: path.resolve(__dirname, 'src/reducers')
+      components: path.resolve(__dirname, 'src/components/'),
+      actions: path.resolve(__dirname, 'src/actions/'),
+      reducers: path.resolve(__dirname, 'src/reducers')
     }
   },
   loaders: [
