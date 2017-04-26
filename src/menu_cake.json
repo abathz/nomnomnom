@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "img": "./src/assets/img/menu_cake/1.jpg"
+  },
+  {
+    "id": "2",
+    "img": "./src/assets/img/menu_cake/2.jpg"
+  },
+  {
+    "id": "3",
+    "img": "./src/assets/img/menu_cake/3.jpg"
+  },
+  {
+    "id": "4",
+    "img": "./src/assets/img/menu_cake/4.jpg"
+  }
+]

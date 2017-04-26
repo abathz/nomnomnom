@@ -19,6 +19,7 @@
 }*/
 
 body{
+	letter-spacing: 0.03em;
   font-family: "Medium" !important;
   background-color: #695c4b !important;
   /*background: url(./assets/img/background.png) no-repeat;
@@ -196,7 +197,8 @@ h6{
   border-radius: 5px;
 }
 
-.content-about span{
+.content-about span,
+.featured-content span{
 	border-bottom: 2px solid #f7ef6e;
 }
 

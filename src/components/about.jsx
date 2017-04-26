@@ -29,13 +29,15 @@ export default class AboutUs extends Component {
 					<div className="row">
 						<div className="col">
 							<div className="featured-content text-center">
-								<h1 className="text-uppercase">Featured</h1>
+								<h1 className="text-uppercase"><span>Featured</span></h1>
 								<ul className="list-inline">
-									<li className="list-inline-item"><img src="./src/assets/img/intv.png" width="120px" alt="" /></li>
-									<li className="list-inline-item"><img style={{ 'verticalAlign': '-34px' }} src="./src/assets/img/nettv.png" width="150px" alt="" /></li>
-									<li className="list-inline-item"><img style={{ 'verticalAlign': '-23px' }} src="./src/assets/img/femina.png" width="180px" alt="" /></li>
-									<li className="list-inline-item">kashdlajsd</li>
-									<li className="list-inline-item">kashdlajsd</li>
+									<li className="list-inline-item"><img className="img-fluid" src="./src/assets/img/intv.png" width="120px" alt="" /></li>
+									<li className="list-inline-item"><img className="img-fluid" style={{ 'verticalAlign': '-34px' }} src="./src/assets/img/nettv.png" width="150px" alt="" /></li>
+									<li className="list-inline-item"><img className="img-fluid" style={{ 'verticalAlign': '-23px' }} src="./src/assets/img/femina.png" width="180px" alt="" /></li>
+									<li className="list-inline-item"><img className="img-fluid" style={{ 'verticalAlign': '-33px' }} src="./src/assets/img/logo.png" width="150px" alt=""/></li>
+									<li className="list-inline-item"><img className="img-fluid" style={{ 'verticalAlign': '-33px' }} src="./src/assets/img/OZJakarta.png" width="150px" alt=""/></li>
+									<li className="list-inline-item"><img className="img-fluid" style={{ 'verticalAlign': '-31px' }} src="./src/assets/img/tabloid-rumah.png" width="160px" alt=""/></li>
+									<li className="list-inline-item"><img className="img-fluid" style={{ 'verticalAlign': '-20px' }} src="./src/assets/img/kebayoran.png" width="180px" alt=""/></li>
 								</ul>
 							</div>
 						</div>

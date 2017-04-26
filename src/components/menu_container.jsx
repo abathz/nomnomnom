@@ -6,7 +6,7 @@ export default class MenuContainer extends Component {
     return (
       <div className="row">
         <div className="grid col-12 col-lg-6 food-menu animated fadeInLeft">
-          <Link to="/about">
+          <Link to="/food_menu">
             <div className="effect-lily">
               <img className="img-fluid" src="./src/assets/img/food.jpg" alt="img12" />
               <div className="caption">
@@ -20,7 +20,7 @@ export default class MenuContainer extends Component {
           </Link>
         </div>
         <div className="grid col-12 col-lg-6 cake-menu animated fadeInRight">
-          <Link to="/about">
+          <Link to="/cake_menu">
             <div className="effect-lily">
               <img className="img-fluid" src="./src/assets/img/cakes.jpg" alt="img12" />
               <div className="caption">

@@ -21,15 +21,3 @@ export default class Navbar extends Component {
     );
   }
 }
-{/* <div className="row animated fadeInUp">
-  <div className="mx-auto mt-3">
-    <div className="navbar">
-      <ul>
-        <li><Link to="/about">About Us</Link></li>
-        <li><Link to="/gallery">Menu</Link></li>
-        <Link to="/"><img src="./src/assets/img/nomnomnom_logo-01.png" width="200px" alt=""/></Link>
-        <li><Link to="/gallery">Gallery</Link></li>
-      </ul>
-    </div>
-  </div>
-</div> */}
