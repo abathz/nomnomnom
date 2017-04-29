@@ -22,8 +22,8 @@ body{
 	letter-spacing: 0.03em;
   font-family: "Medium" !important;
   background-color: #695c4b !important;
-  /*background: url(./assets/img/background.png) no-repeat;
-  background-size: 100%;*/
+  background: url(./assets/img/background.jpg) repeat;
+  /*background-size: 100%;*/
 }
 
 h1,
@@ -49,6 +49,7 @@ h6{
 }
 
 .navbar li{
+	font-family: "Bold";
   margin-right: 20px;
   display: inline-block;
   color: #fff;
@@ -57,7 +58,7 @@ h6{
 
 .navbar li a:hover{
 	padding-bottom: 5px;
-  border-bottom: 4px solid #d0b03e;
+  border-bottom: 4px solid #f7ef6e;
   color: #fff;
 }
 
@@ -248,4 +249,12 @@ h6{
 .footer-info a,
 .footer-info a:hover{
   color: #fff;
+}
+
+/*------------*/
+/* Contact Us */
+/*------------*/
+
+.content-contact{
+	color: #fff;
 }

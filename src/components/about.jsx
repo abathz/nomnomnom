@@ -8,8 +8,8 @@ export default class AboutUs extends Component {
 		return (
 			<div>
 				<Header />
-				<div className="container">
-					<div className="row">
+				<div className="container mb-5">
+					<div className="row animated fadeInUp">
 						<div className="col">
 							<div className="text-center content-about">
 								<h1 className="text-uppercase mb-4"><span>who we are?</span></h1>
@@ -26,7 +26,7 @@ export default class AboutUs extends Component {
 							</div>
 						</div>
 					</div>
-					<div className="row">
+					<div className="row animated fadeInUp">
 						<div className="col">
 							<div className="featured-content text-center">
 								<h1 className="text-uppercase"><span>Featured</span></h1>
@@ -43,7 +43,6 @@ export default class AboutUs extends Component {
 						</div>
 					</div>
 				</div>
-				<Footer />
 			</div>
 		);
 	}

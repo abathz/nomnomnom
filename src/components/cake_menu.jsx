@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { fetchDataCake } from 'actions/index';
 
 import Header from 'components/header';
-import Footer from 'components/footer';
 
 class CakeMenu extends Component {
   componentDidMount(){
@@ -31,7 +30,6 @@ class CakeMenu extends Component {
             {this.renderFood()}
           </div>
         </div>
-        <Footer />
       </div>
     );
   }

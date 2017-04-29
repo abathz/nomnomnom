@@ -10,11 +10,11 @@ class Gallery extends Component {
     this.props.fetchDataGallery();
   }
 
-  renderFood() {
+  renderGallery() {
     return this.props.gallery.map((img) => {
       return (
-        <div class="card">
-          <img class="card-img img-fluid" src="..." alt="Card image" />
+        <div className="card animated fadeInUp" key={img.id}>
+          <img className="card-img img-fluid" src={img.img} />
         </div>
       );
     });
@@ -23,14 +23,16 @@ class Gallery extends Component {
   render() {
     if (!this.props.gallery) { return (<div>Loading....</div>); }
     return (
-      <div>
+      <div className="mb-5">
         <Header />
         <div className="container text-center">
           <h1 style={{ 'color': '#fff', 'marginBottom': '30px' }}><span style={{ 'borderBottom': '2px solid #f7ef6e' }}>Gallery</span></h1>
           <div className="row">
+            <div className="card-columns">
+              {this.renderGallery()}
+            </div>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }

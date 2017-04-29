@@ -13,7 +13,7 @@ export default class MenuContainer extends Component {
                 <div>
                   <img className="icon-caption" src="./src/assets/img/food-icon.png" width="100px" />
                   <h1>Food</h1>
-                  <p>lorem ipsum</p>
+                  <p>Click here for menu</p>
                 </div>
               </div>
             </div>
@@ -27,7 +27,7 @@ export default class MenuContainer extends Component {
                 <div>
                   <img className="icon-caption" src="./src/assets/img/cake-icon.png" width="90px" />
                   <h1>Cakes</h1>
-                  <p>lorem ipsum</p>
+                  <p>Click Here for menu</p>
                 </div>
               </div>
             </div>
