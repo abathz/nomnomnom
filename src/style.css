@@ -22,8 +22,8 @@ body{
 	letter-spacing: 0.03em;
   font-family: "Medium" !important;
   background-color: #695c4b !important;
-  background: url(./assets/img/background.jpg) repeat;
-  /*background-size: 100%;*/
+  background: url(./assets/img/background-02.png);
+  background-size: 100%;
 }
 
 h1,
@@ -224,6 +224,10 @@ h6{
 	padding: 10px;
 }
 
+.list-inline-item:last-child:hover{
+	cursor: pointer;
+}
+
 /*--------*/
 /* Footer */
 /*--------*/
@@ -240,7 +244,7 @@ h6{
   margin-left: 10px;
 }
 
-.footer-info p{
+.footer-info{
   font-family: "Medium";
   font-size: 9pt;
   color: #fff;
@@ -256,5 +260,10 @@ h6{
 /*------------*/
 
 .content-contact{
+	color: #fff;
+}
+
+.content-contact a,
+.content-contact a:hover{
 	color: #fff;
 }

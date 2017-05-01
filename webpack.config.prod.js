@@ -54,6 +54,5 @@ module.exports = {
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.MinChunkSizePlugin({minChunkSize: 10000}),
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"public/vendor.bundle.js")
   ],
 };
