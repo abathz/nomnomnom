@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { fetchDataCake } from 'actions/index';
 
 import Header from 'components/header';
 
-class CakeMenu extends Component {
-  componentDidMount(){
+class CakeMenu extends PureComponent {
+  componentWillMount(){
     this.props.fetchDataCake();
   }
 

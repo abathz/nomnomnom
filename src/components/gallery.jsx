@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { fetchDataGallery } from 'actions/index';
 
 import Header from 'components/header';
 import Footer from 'components/footer';
 
-class Gallery extends Component {
-  componentDidMount() {
+class Gallery extends PureComponent {
+  componentWillMount() {
     this.props.fetchDataGallery();
   }
 

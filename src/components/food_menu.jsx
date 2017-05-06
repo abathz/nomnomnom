@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { fetchDataFood } from 'actions/index';
 
 import Header from 'components/header';
 
-class FoodMenu extends Component {
-  componentDidMount() {
+class FoodMenu extends PureComponent {
+  componentWillMount() {
     this.props.fetchDataFood();
   }
 
