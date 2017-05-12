@@ -8,8 +8,8 @@ const foodJson = "./src/actions/json/menu_food.json";
 const cakeJson = "./src/actions/json/menu_cake.json";
 const galleryJson = "./src/actions/json/gallery.json";
 
-export function fetchDataFood(){
-  const request = axios.get(foodJson);
+export async function fetchDataFood(){
+  const request = await axios.get(foodJson);
 
   return {
     type: FETCH_FOOD,
@@ -17,8 +17,8 @@ export function fetchDataFood(){
   };
 }
 
-export function fetchDataCake(){
-  const request = axios.get(cakeJson);
+export async function fetchDataCake(){
+  const request = await axios.get(cakeJson);
 
   return {
     type: FETCH_CAKE,
@@ -26,8 +26,8 @@ export function fetchDataCake(){
   };
 }
 
-export function fetchDataGallery(){
-  const request = axios.get(galleryJson);
+export async function fetchDataGallery(){
+  const request = await axios.get(galleryJson);
 
   return {
     type: FETCH_GALLERY,
